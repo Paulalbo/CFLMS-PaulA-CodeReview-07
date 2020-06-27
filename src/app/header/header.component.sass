@@ -1,0 +1,125 @@
+header 
+    height: 210vh
+    width: 95vw
+    background-image: url(https://images.unsplash.com/photo-1494881135443-61e5abc36c16?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    background-attachment: fixed
+    margin: 0
+    padding: 0
+    display: flex
+    margin-left: 5vw
+
+    & .visiblefont
+        position: fixed
+        width: 100%
+    
+    & .visiblefont h1
+        text-align: center
+
+    & .shadow
+        background-image: url(https://images.unsplash.com/photo-1494881135443-61e5abc36c16?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2550&q=80)
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: left
+        background-attachment: fixed
+        -webkit-text-fill-color: transparent
+        -webkit-background-clip: text
+        -webkit-text-stroke: 4px white
+
+    & h1 
+        font-size: 20em
+        color: white
+        font-weight: 100
+        line-height: 100vh
+        font-weight: bold
+        margin: 0
+              
+    
+    & .transparentfont
+        text-align: left
+        background-color: white
+        margin-left: 50vw
+        height: 100vh
+        width: 100%
+
+
+    & ul
+        margin-top: 60vh
+        padding-top: 50%
+        min-height: 10vh
+        color: white
+        font-size: 5em
+        padding: 1vh 5vw
+        position: absolute
+        position: fixed
+        list-style-type: square
+
+section
+    position: relative
+    z-index: 5
+    background-color: white
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    padding: 5%
+    width: 95vw
+
+    & div
+        width: 40%
+        height: auto
+    
+    & .teaserimg
+    
+    & .description
+        padding: 2.5%
+
+    & img
+        width: 100%
+        height: 105%
+        object-fit: cover
+
+    & h1
+        font-weight: 300
+        font-size: 3em
+        margin: 12vh 0 4vh 0
+
+    & p
+       padding: 5vh 0
+       font-size: 1.5em
+    
+    & .button 
+        border-radius: 4px
+        background: linear-gradient(to right, #757575, #2b2b2b) !important
+        border: none
+        color: #FFFFFF
+        text-align: center
+        text-transform: uppercase
+        font-size: 22px
+        padding: 20px
+        width: 200px
+        transition: all 0.4s
+        cursor: pointer
+ 
+    & .button span 
+        cursor: pointer
+        display: inline-block
+        position: relative
+        transition: 0.4s
+ 
+    & .button span:after 
+        content: '\00bb'
+        position: absolute
+        opacity: 0
+        top: 0
+        right: -20px
+        transition: 0.5s
+ 
+    & .button:hover span 
+        padding-right: 25px
+ 
+    & .button:hover span:after 
+        opacity: 1
+        right: 0
+ 

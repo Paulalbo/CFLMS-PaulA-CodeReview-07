@@ -1,0 +1,25 @@
+<div class="container">
+    <h2>Product Details</h2>
+
+    <div class="detailscontainer" *ngIf="product">
+
+        <div>
+            <img src="{{ product.img }}">
+        </div>
+
+        <div>
+            <h1>{{ product.name }}</h1>
+            <h3>{{ product.price | currency }}</h3>
+            <p>{{ product.description }}<br> &nbsp;</p>
+
+            <a class="button" routerLink="/products" rel="nofollow">
+                <span>back</span>
+            </a>
+            <a class="button" (click)="addToCart(product)" rel="nofollow">
+                <span>buy <i class="fa fa-shopping-cart"></i></span>
+            </a>
+        </div>
+
+    </div>
+
+</div>
