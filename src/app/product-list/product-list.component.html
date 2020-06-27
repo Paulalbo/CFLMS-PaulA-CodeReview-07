@@ -11,7 +11,8 @@
         </div>
           <p *ngIf="product.description">
             <i class="fa">&#xf133;</i> {{ product.startdate }}<br>
-            <i class="fa">&#xf017;</i> {{ product.duration }}<br><br>
+            <i class="fa">&#xf017;</i> {{ product.duration }}<br>
+            <i class="fa">&#xf0d6;</i> {{ product.price | currency }}<br><br>
             {{ product.description }}
           </p>
 
