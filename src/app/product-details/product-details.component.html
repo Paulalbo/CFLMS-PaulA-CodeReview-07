@@ -8,8 +8,8 @@
         </div>
 
         <div>
-            <h1>{{ product.name }}</h1>
-            <h3>{{ product.price | currency }}</h3>
+            <h1>{{ product.destination }}</h1>
+            <h3><i class="fa">&#xf133;</i> {{ product.startdate }} | <i class="fa">&#xf017;</i> {{ product.duration }} | {{ product.price | currency }}</h3>
             <p>{{ product.description }}<br> &nbsp;</p>
 
             <a class="button" routerLink="/products" rel="nofollow">

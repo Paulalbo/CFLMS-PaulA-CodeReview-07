@@ -6,11 +6,13 @@
           <img src="{{ product.img }}">
         
           <h3>
-            {{ product.name }}
+            {{ product.destination }}
           </h3>
         </div>
           <p *ngIf="product.description">
-            Description: {{ product.description }}
+            <i class="fa">&#xf133;</i> {{ product.startdate }}<br>
+            <i class="fa">&#xf017;</i> {{ product.duration }}<br><br>
+            {{ product.description }}
           </p>
 
       
